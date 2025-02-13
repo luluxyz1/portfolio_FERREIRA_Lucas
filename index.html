@@ -5,19 +5,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./src/output.css" rel="stylesheet">
 </head>
-<body>
-    <header class="bg-[#d6ccc2] flex flex-row">
+<body class="bg-[#00573F]">
+    <header class="relative bg-gray-400 w-full flex-row">
         <div class="w-full py-5 flex justify-start">
-            <h1 class="animate-fade-down px-3 text-3xl font-bold">Lucas Ferreira</h1>
-        </div>
-        <div class="w-full flex items-center justify-end">
-            <a class="px-3 hover:underline" href="docs/cv_ferreira_lucas.pdf" target="_blank">Curriculum Vitae</a>
-            <a class="px-3">Contact</a>
+            <h1 class=" px-3 text-3xl font-bold font-mattoneRegular">Lucas Ferreira</h1>
         </div>
     </header>
-    <main class="bg-[#f5ebe0] h-screen flex">
-        <div class=" flex w-full">
-            <div class="flex flex-col w-full justify-center items-center">
+    <main class=" flex flex-col">
+        <div class="flex h-screen justify-center items-center">
+            <div class="flex h-full w-full flex-col py-56   ">
+                <h1 class="text-white px-28 flex items-center animate-fade-right animate-ease-out font-mattoneRegular font-black text-6xl">
+                    bienvenue
+                </h1>
+                <h2 class="text-white px-28 flex animate-fade-down items-start ">
+                    Lucas Ferreira
+                </h2>
+            </div>
+            <div class="flex h-full w-full items-center justify-center bg-[url(/imgs/life.jpeg)]">
+                <div class="flex w-3/4 h-full mx-3 rounded-tr-xl ">
+                </div>
+                <div class="flex w-3/4 h-full mx-3 rounded-tr-2xl">
+                </div>
+                <div class="flex w-3/4 h-full mx-3 rounded-tr-3xl">
+                </div>
+                <div class="flex w-3/4 h-full mx-3 rounded-tr-4xl">
+                </div>
+            </div>
+        </div>
+        <div class="bg-red-300 flex h-screen w-full">
+            <div class="border-1  border-red-500 flex flex-col w-full justify-center items-center">
                 <a class=" hover:underline hover:text-red-600" href="docs/cv_ferreira_lucas.pdf" target="_blank">
                     Curriculum Vitae
                 </a>
@@ -28,8 +44,8 @@
                     GitHub
                 </a>
             </div>
-            <div class="flex bg-amber-200 flex-col  justify-center w-full items-center">
-                <p class="justify-center p-5">
+            <div class="flex border-1 border-green-600 flex-col  justify-center w-full items-center">
+                <p class="text-pink-500 justify-center p-5">
                     This is a simple portfolio page created using Tailwind CSS.
                 </p>
                 <div class="bg-[url(/imgs/life.jpeg)]">
