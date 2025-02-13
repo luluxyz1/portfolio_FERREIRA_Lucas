@@ -710,6 +710,9 @@
       max-width: 96rem !important;
     }
   }
+  .mx-3 {
+    margin-inline: calc(var(--spacing) * 3);
+  }
   .box-border {
     box-sizing: border-box;
   }
@@ -797,12 +800,6 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
-  .h-1 {
-    height: calc(var(--spacing) * 1);
-  }
-  .h-1\/4 {
-    height: calc(1/4 * 100%);
-  }
   .h-full {
     height: 100%;
   }
@@ -818,14 +815,11 @@
   .min-h-screen {
     min-height: 100vh;
   }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-1\/4 {
-    width: calc(1/4 * 100%);
+  .w-3\/4 {
+    width: calc(3/4 * 100%);
   }
   .w-full {
     width: 100%;
@@ -972,6 +966,9 @@
   }
   .animate-fade-down {
     animation: var(--animate-fade-down);
+  }
+  .animate-fade-right {
+    animation: var(--animate-fade-right);
   }
   .animate-jump-in {
     animation: var(--animate-jump-in);
@@ -1344,9 +1341,6 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-2xl {
-    border-radius: var(--radius-2xl);
-  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1385,6 +1379,18 @@
   .rounded-tr {
     border-top-right-radius: 0.25rem;
   }
+  .rounded-tr-2xl {
+    border-top-right-radius: var(--radius-2xl);
+  }
+  .rounded-tr-3xl {
+    border-top-right-radius: var(--radius-3xl);
+  }
+  .rounded-tr-4xl {
+    border-top-right-radius: var(--radius-4xl);
+  }
+  .rounded-tr-xl {
+    border-top-right-radius: var(--radius-xl);
+  }
   .rounded-b {
     border-bottom-right-radius: 0.25rem;
     border-bottom-left-radius: 0.25rem;
@@ -1396,6 +1402,10 @@
     border-bottom-left-radius: 0.25rem;
   }
   .border {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+  }
+  .border-1 {
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
@@ -1455,6 +1465,12 @@
     --tw-border-style: solid;
     border-style: solid;
   }
+  .border-green-600 {
+    border-color: var(--color-green-600);
+  }
+  .border-red-500 {
+    border-color: var(--color-red-500);
+  }
   .bg-\(--my_variable\) {
     background-color: var(--my_variable);
   }
@@ -1464,26 +1480,20 @@
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
   }
-  .bg-\[\#d6ccc2\] {
-    background-color: #d6ccc2;
-  }
-  .bg-\[\#f5ebe0\] {
-    background-color: #f5ebe0;
+  .bg-\[\#00573F\] {
+    background-color: #00573F;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
-  .bg-\[url\] {
-    background-color: url;
-  }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
-  .bg-amber-200 {
-    background-color: var(--color-amber-200);
+  .bg-gray-400 {
+    background-color: var(--color-gray-400);
   }
-  .bg-amber-300 {
-    background-color: var(--color-amber-300);
+  .bg-red-300 {
+    background-color: var(--color-red-300);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1493,9 +1503,6 @@
   }
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
   .-bg-conic {
     --tw-gradient-position: in oklab;
@@ -1509,20 +1516,8 @@
     --tw-gradient-position: in oklab;
     background-image: radial-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\)\] {
-    background-image: url();
-  }
   .bg-\[url\(\/imgs\/life\.jpeg\)\] {
     background-image: url(/imgs/life.jpeg);
-  }
-  .bg-\[url\(imgs\)\] {
-    background-image: url(imgs);
-  }
-  .bg-\[url\(imgs\/\)\] {
-    background-image: url(imgs/);
-  }
-  .bg-\[url\(imgs\/life\.jpeg\)\] {
-    background-image: url(imgs/life.jpeg);
   }
   .bg-none {
     background-image: none;
@@ -1684,8 +1679,14 @@
   .px-3 {
     padding-inline: calc(var(--spacing) * 3);
   }
+  .px-28 {
+    padding-inline: calc(var(--spacing) * 28);
+  }
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
+  }
+  .py-56 {
+    padding-block: calc(var(--spacing) * 56);
   }
   .text-center {
     text-align: center;
@@ -1733,9 +1734,17 @@
     font-size: var(--text-3xl);
     line-height: var(--tw-leading, var(--text-3xl--line-height));
   }
+  .text-6xl {
+    font-size: var(--text-6xl);
+    line-height: var(--tw-leading, var(--text-6xl--line-height));
+  }
   .leading-none {
     --tw-leading: 1;
     line-height: 1;
+  }
+  .font-black {
+    --tw-font-weight: var(--font-weight-black);
+    font-weight: var(--font-weight-black);
   }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
@@ -1813,6 +1822,12 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-pink-500 {
+    color: var(--color-pink-500);
+  }
+  .text-white {
+    color: var(--color-white);
   }
   .capitalize {
     text-transform: capitalize;
