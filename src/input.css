@@ -6,6 +6,39 @@
 
 
 @font-face {
+    font-family: Rany;
+    src: url(../fonts/rany_font/Rany.otf);
+}
+@font-face {
+    font-family: RanyItalic;
+    src: url(../fonts/rany_font/Rany-Italic.otf);
+}
+@font-face {
+    font-family: RanyBold;
+    src: url(../fonts/rany_font/Rany-Bold.otf);
+}
+@font-face {
+    font-family: RanyBoldItalic;
+    src: url(../fonts/rany_font/Rany-BoldItalic.otf);
+}
+@font-face {
+    font-family: RanyLight;
+    src: url(../fonts/rany_font/Rany-Light.otf);
+}
+@font-face {
+    font-family: RanyLightItalic;
+    src: url(../fonts/rany_font/Rany-LightItalic.otf);
+}
+@font-face {
+    font-family: RanyMedium;
+    src: url(../fonts/rany_font/Rany-Medium.otf);
+}
+@font-face {
+    font-family: RanyMediumItalic;
+    src: url(../fonts/rany_font/Rany-MediumItalic.otf);
+}
+
+@font-face {
     font-family: baseneueBold;
     src: url(../fonts/BaseNeue/BaseNeueTrial-Bold.otf);
 }
@@ -33,5 +66,13 @@
     --font-MattoneBold: "MattoneBold", serif;
     --font-MattoneRegular: "MattoneRegular", serif;
     --font-Noto: "Noto Sans", serif;
+    --font-Rany: "Rany", serif;
+    --font-RanyItalic: "RanyItalic", serif;
+    --font-RanyBold: "RanyBold", serif;
+    --font-RanyBoldItalic: "RanyBoldItalic", serif;
+    --font-RanyLight: "RanyLight", serif;
+    --font-RanyLightItalic: "RanyLightItalic", serif;
+    --font-RanyMedium: "RanyMedium", serif;
+    --font-RanyMediumItalic: "RanyMediumItalic", serif;
 
 }
