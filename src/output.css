@@ -1479,17 +1479,47 @@
   .bg-\(color\:--my-color\) {
     background-color: var(--my-color);
   }
-  .bg-\[\#004F2D\] {
-    background-color: #004F2D;
+  .bg-\[\#1B2D2A\] {
+    background-color: #1B2D2A;
   }
   .bg-\[\#0088cc\] {
     background-color: #0088cc;
+  }
+  .bg-\[\#226F54\] {
+    background-color: #226F54;
+  }
+  .bg-\[\#937D64\] {
+    background-color: #937D64;
+  }
+  .bg-\[\#38423B\] {
+    background-color: #38423B;
+  }
+  .bg-\[\#43291F\] {
+    background-color: #43291F;
+  }
+  .bg-\[\#283618\] {
+    background-color: #283618;
+  }
+  .bg-\[\#386641\] {
+    background-color: #386641;
+  }
+  .bg-\[\#BC6C25\] {
+    background-color: #BC6C25;
+  }
+  .bg-\[\#DDA15E\] {
+    background-color: #DDA15E;
+  }
+  .bg-\[\#F4F0BB\] {
+    background-color: #F4F0BB;
   }
   .bg-\[color\:var\(--my-color\)\] {
     background-color: var(--my-color);
   }
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
+  }
+  .bg-black {
+    background-color: var(--color-black);
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
@@ -1500,6 +1530,9 @@
   .bg-red-500\/\[50\%\] {
     background-color: color-mix(in oklab, var(--color-red-500) 50%, transparent);
   }
+  .bg-stone-800 {
+    background-color: var(--color-stone-800);
+  }
   .-bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
@@ -1507,10 +1540,6 @@
   .bg-conic {
     --tw-gradient-position: in oklab;
     background-image: conic-gradient(var(--tw-gradient-stops));
-  }
-  .bg-gradient-to-b {
-    --tw-gradient-position: to bottom in oklab;
-    background-image: linear-gradient(var(--tw-gradient-stops));
   }
   .bg-radial {
     --tw-gradient-position: in oklab;
@@ -1524,12 +1553,6 @@
   }
   .via-none {
     --tw-gradient-via-stops: initial;
-  }
-  .from-100\% {
-    --tw-gradient-from-position: 100%;
-  }
-  .to-0\% {
-    --tw-gradient-to-position: 0%;
   }
   .box-decoration-clone {
     -webkit-box-decoration-break: clone;
@@ -1818,11 +1841,23 @@
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
   }
+  .text-\[\#87C38F\] {
+    color: #87C38F;
+  }
+  .text-\[\#226F54\] {
+    color: #226F54;
+  }
+  .text-\[\#43291F\] {
+    color: #43291F;
+  }
+  .text-\[\#DA2C38\] {
+    color: #DA2C38;
+  }
+  .text-\[\#\] {
+    color: #;
+  }
   .text-black {
     color: var(--color-black);
-  }
-  .text-blue-50 {
-    color: var(--color-blue-50);
   }
   .text-pink-500 {
     color: var(--color-pink-500);
@@ -2049,11 +2084,6 @@
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
     backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
   }
-  .backdrop-blur-2xl {
-    --tw-backdrop-blur: blur(var(--blur-2xl));
-    -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-    backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
-  }
   .backdrop-blur-none {
     --tw-backdrop-blur:  ;
     -webkit-backdrop-filter: var(--tw-backdrop-blur,) var(--tw-backdrop-brightness,) var(--tw-backdrop-contrast,) var(--tw-backdrop-grayscale,) var(--tw-backdrop-hue-rotate,) var(--tw-backdrop-invert,) var(--tw-backdrop-opacity,) var(--tw-backdrop-saturate,) var(--tw-backdrop-sepia,);
@@ -2235,17 +2265,20 @@
   .animate-delay-none {
     animation-delay: 0s;
   }
-  .animate-duration-75 {
-    animation-duration: 75ms;
-  }
   .animate-duration-100 {
     animation-duration: 100ms;
   }
   .animate-duration-200 {
     animation-duration: 200ms;
   }
-  .animate-duration-500 {
-    animation-duration: 500ms;
+  .animate-duration-300 {
+    animation-duration: 300ms;
+  }
+  .animate-duration-700 {
+    animation-duration: 700ms;
+  }
+  .animate-duration-75 {
+    animation-duration: 75ms;
   }
   .animate-duration-1000 {
     animation-duration: 1000ms;
@@ -2253,11 +2286,8 @@
   .animate-duration-150 {
     animation-duration: 150ms;
   }
-  .animate-duration-300 {
-    animation-duration: 300ms;
-  }
-  .animate-duration-700 {
-    animation-duration: 700ms;
+  .animate-duration-500 {
+    animation-duration: 500ms;
   }
   .animate-duration-1234 {
     animation-duration: 1234ms;
@@ -2785,48 +2815,6 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
-}
-@property --tw-gradient-position {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-via {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-to {
-  syntax: "<color>";
-  inherits: false;
-  initial-value: #0000;
-}
-@property --tw-gradient-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-via-stops {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-gradient-from-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 0%;
-}
-@property --tw-gradient-via-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 50%;
-}
-@property --tw-gradient-to-position {
-  syntax: "<length-percentage>";
-  inherits: false;
-  initial-value: 100%;
 }
 @property --tw-leading {
   syntax: "*";
